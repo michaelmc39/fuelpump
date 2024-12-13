@@ -45,7 +45,7 @@ Public Class frmfPumpFuel
             lblCost.Text = currentPriceDiesel.ToString("0.0")
         ElseIf RbPetrol.Checked Then
             Dim currentLitresPetrol As Double = Val(lblLitres.Text.Replace("L", ""))
-            currentLitresPetrol += PetrolPrice
+            currentLitresPetrol += LitresPetrol
 
             lblLitres.Text = currentLitresPetrol.ToString("0.0") & "L"
 
@@ -61,6 +61,7 @@ Public Class frmfPumpFuel
 
 
 
+
     End Sub
 
     Private Sub lblLitres_Click(sender As Object, e As EventArgs) Handles lblLitres.Click
@@ -69,8 +70,16 @@ Public Class frmfPumpFuel
 
     Private Sub btnTransaction_Click(sender As Object, e As EventArgs) Handles btnTransaction.Click
         CostValue = lblCost.Text
+        FuelAmount = lblLitres.Text
         Dim frmFinishTransaction As New frmFinishTransaction()
         Me.Hide()
+        Me.Dispose()
         frmFinishTransaction.Show()
+    End Sub
+
+    Private Sub BtnAdmin_Click(sender As Object, e As EventArgs) Handles btnAdmin.Click
+        frmAdminLogin.Show()
+        Me.Hide()
+        Me.Dispose()
     End Sub
 End Class

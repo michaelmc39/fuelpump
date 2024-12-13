@@ -34,6 +34,8 @@ Partial Class frmfPumpFuel
         RbPetrol = New RadioButton()
         RbDiesel = New RadioButton()
         btnTransaction = New Button()
+        Label1 = New Label()
+        btnAdmin = New Button()
         SuspendLayout()
         ' 
         ' btnCloseProgram
@@ -134,6 +136,24 @@ Partial Class frmfPumpFuel
         btnTransaction.Text = "Finish Transaction"
         btnTransaction.UseVisualStyleBackColor = True
         ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(570, 28)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(208, 15)
+        Label1.TabIndex = 13
+        Label1.Text = "FUEL COST IS £3.25 PER LITRE OF FUEL"
+        ' 
+        ' btnAdmin
+        ' 
+        btnAdmin.Location = New Point(62, 396)
+        btnAdmin.Name = "btnAdmin"
+        btnAdmin.Size = New Size(75, 23)
+        btnAdmin.TabIndex = 14
+        btnAdmin.Text = "Admin"
+        btnAdmin.UseVisualStyleBackColor = True
+        ' 
         ' frmfPumpFuel
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
@@ -141,6 +161,8 @@ Partial Class frmfPumpFuel
         BackgroundImage = My.Resources.Resources.petrol_station_e1635517091232
         BackgroundImageLayout = ImageLayout.Stretch
         ClientSize = New Size(800, 450)
+        Controls.Add(btnAdmin)
+        Controls.Add(Label1)
         Controls.Add(btnTransaction)
         Controls.Add(RbDiesel)
         Controls.Add(RbPetrol)
@@ -168,5 +190,7 @@ Partial Class frmfPumpFuel
     Friend WithEvents RbPetrol As RadioButton
     Friend WithEvents RbDiesel As RadioButton
     Friend WithEvents btnTransaction As Button
+    Friend WithEvents Label1 As Label
+    Friend WithEvents btnAdmin As Button
 
 End Class

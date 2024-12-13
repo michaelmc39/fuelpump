@@ -28,6 +28,10 @@ Partial Class frmAdminLogin
         tbPassword = New TextBox()
         btnLogin = New Button()
         Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        Label5 = New Label()
         SuspendLayout()
         ' 
         ' tbUsername
@@ -67,11 +71,51 @@ Partial Class frmAdminLogin
         Label1.TabIndex = 4
         Label1.Text = "Admin Login"
         ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(242, 127)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(60, 15)
+        Label2.TabIndex = 5
+        Label2.Text = "Username"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(242, 214)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(57, 15)
+        Label3.TabIndex = 6
+        Label3.Text = "Password"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(595, 88)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(108, 15)
+        Label4.TabIndex = 7
+        Label4.Text = "Username: Admin1"
+        ' 
+        ' Label5
+        ' 
+        Label5.AutoSize = True
+        Label5.Location = New Point(595, 171)
+        Label5.Name = "Label5"
+        Label5.Size = New Size(98, 15)
+        Label5.TabIndex = 8
+        Label5.Text = "Password: Pass22"
+        ' 
         ' frmAdminLogin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label5)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
         Controls.Add(Label1)
         Controls.Add(btnLogin)
         Controls.Add(tbPassword)
@@ -87,4 +131,8 @@ Partial Class frmAdminLogin
     Friend WithEvents tbPassword As TextBox
     Friend WithEvents btnLogin As Button
     Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents Label5 As Label
 End Class

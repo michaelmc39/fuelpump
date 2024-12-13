@@ -8,7 +8,7 @@
     Private Sub timSplash_Tick(sender As Object, e As EventArgs) Handles timSplash.Tick
         timSplash.Stop()
         timSplash.Dispose()
-        frmfPumpFuel.Show()
+        frmMain.Show()
         Me.Visible = False
     End Sub
 End Class
