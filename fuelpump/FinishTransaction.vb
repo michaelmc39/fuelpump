@@ -1,4 +1,4 @@
-﻿Public Class FinishTransaction
+﻿Public Class frmAdminLogin
     Private Sub tbUsername_TextChanged(sender As Object, e As EventArgs) Handles tbUsername.TextChanged
 
     End Sub
@@ -11,5 +11,9 @@
         Else
             MessageBox.Show("Password Is Incorrect")
         End If
+    End Sub
+
+    Private Sub frmAdminLogin_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
     End Sub
 End Class

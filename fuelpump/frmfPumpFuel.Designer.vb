@@ -136,7 +136,7 @@ Partial Class frmfPumpFuel
         ' 
         ' frmfPumpFuel
         ' 
-        AutoScaleDimensions = New SizeF(7.0F, 15.0F)
+        AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         BackgroundImage = My.Resources.Resources.petrol_station_e1635517091232
         BackgroundImageLayout = ImageLayout.Stretch

@@ -66,4 +66,11 @@ Public Class frmfPumpFuel
     Private Sub lblLitres_Click(sender As Object, e As EventArgs) Handles lblLitres.Click
 
     End Sub
+
+    Private Sub btnTransaction_Click(sender As Object, e As EventArgs) Handles btnTransaction.Click
+        CostValue = lblCost.Text
+        Dim frmFinishTransaction As New frmFinishTransaction()
+        Me.Hide()
+        frmFinishTransaction.Show()
+    End Sub
 End Class

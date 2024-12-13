@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class Adminfrm
+Partial Class frmFinishTransaction
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -22,15 +22,29 @@ Partial Class Adminfrm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        lblCheckout = New Label()
         SuspendLayout()
         ' 
-        ' Adminfrm
+        ' lblCheckout
+        ' 
+        lblCheckout.AutoSize = True
+        lblCheckout.Location = New Point(277, 117)
+        lblCheckout.Name = "lblCheckout"
+        lblCheckout.Size = New Size(41, 15)
+        lblCheckout.TabIndex = 0
+        lblCheckout.Text = "Label1"
+        ' 
+        ' frmFinishTransaction
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
-        Name = "Adminfrm"
-        Text = "Adminfrm"
+        Controls.Add(lblCheckout)
+        Name = "frmFinishTransaction"
+        Text = "frmFinishTransaction"
         ResumeLayout(False)
+        PerformLayout()
     End Sub
+
+    Friend WithEvents lblCheckout As Label
 End Class

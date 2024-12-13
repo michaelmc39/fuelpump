@@ -1,5 +1,5 @@
 ﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
-Partial Class FinishTransaction
+Partial Class frmAdminLogin
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
@@ -27,6 +27,7 @@ Partial Class FinishTransaction
         ContextMenuStrip1 = New ContextMenuStrip(components)
         tbPassword = New TextBox()
         btnLogin = New Button()
+        Label1 = New Label()
         SuspendLayout()
         ' 
         ' tbUsername
@@ -57,16 +58,26 @@ Partial Class FinishTransaction
         btnLogin.Text = "Button1"
         btnLogin.UseVisualStyleBackColor = True
         ' 
-        ' FinishTransaction
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(355, 57)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(76, 15)
+        Label1.TabIndex = 4
+        Label1.Text = "Admin Login"
+        ' 
+        ' frmAdminLogin
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(800, 450)
+        Controls.Add(Label1)
         Controls.Add(btnLogin)
         Controls.Add(tbPassword)
         Controls.Add(tbUsername)
-        Name = "FinishTransaction"
-        Text = "FinishTransaction"
+        Name = "frmAdminLogin"
+        Text = "Admin Login"
         ResumeLayout(False)
         PerformLayout()
     End Sub
@@ -75,4 +86,5 @@ Partial Class FinishTransaction
     Friend WithEvents ContextMenuStrip1 As ContextMenuStrip
     Friend WithEvents tbPassword As TextBox
     Friend WithEvents btnLogin As Button
+    Friend WithEvents Label1 As Label
 End Class
